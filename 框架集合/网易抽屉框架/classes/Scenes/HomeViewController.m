@@ -19,6 +19,8 @@
     self.title =@"个人中心";
     
     // Do any additional setup after loading the view from its nib.
+   
+    
 }
 
 - (void)didReceiveMemoryWarning {

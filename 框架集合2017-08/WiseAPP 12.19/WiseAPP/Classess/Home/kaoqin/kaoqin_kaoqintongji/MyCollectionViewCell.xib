@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MyCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="152" height="149"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="152" height="149"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="cell" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZR-Ub-jk0">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Duk-LW-eXz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lfl-ni-v0a">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="yyy-wl-4mx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDF-xD-PyY">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGl-nZ-993">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="xZR-Ub-jk0" firstAttribute="top" secondItem="DDF-xD-PyY" secondAttribute="bottom" id="6ua-GQ-eDD"/>
+                <constraint firstItem="xZR-Ub-jk0" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="9Em-iw-eGg"/>
+                <constraint firstAttribute="bottom" secondItem="qGl-nZ-993" secondAttribute="bottom" id="9IJ-JM-D2S"/>
+                <constraint firstItem="qGl-nZ-993" firstAttribute="top" secondItem="Lfl-ni-v0a" secondAttribute="bottom" id="AOB-KH-x8g"/>
+                <constraint firstItem="Lfl-ni-v0a" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Fhw-9Q-LJM"/>
+                <constraint firstItem="qGl-nZ-993" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="OJc-k4-xY9"/>
+                <constraint firstItem="Lfl-ni-v0a" firstAttribute="top" secondItem="xZR-Ub-jk0" secondAttribute="bottom" id="ZAy-Om-SV2"/>
+                <constraint firstItem="xZR-Ub-jk0" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="fZ6-R7-x3n"/>
+                <constraint firstItem="qGl-nZ-993" firstAttribute="height" secondItem="DDF-xD-PyY" secondAttribute="height" id="h0Y-Eb-66N"/>
+                <constraint firstItem="xZR-Ub-jk0" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="pk8-v3-IuG"/>
+                <constraint firstItem="qGl-nZ-993" firstAttribute="width" secondItem="DDF-xD-PyY" secondAttribute="width" id="pti-mI-4ot"/>
+                <constraint firstItem="DDF-xD-PyY" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="wzG-SG-FG6"/>
+                <constraint firstItem="DDF-xD-PyY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yRq-iE-cVX"/>
+            </constraints>
+            <size key="customSize" width="152" height="149"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="9Em-iw-eGg"/>
+                    <exclude reference="pk8-v3-IuG"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="label" destination="xZR-Ub-jk0" id="UQs-zl-lXu"/>
+                <outlet property="lunarLabel" destination="Lfl-ni-v0a" id="Gn6-xy-SdU"/>
+            </connections>
+            <point key="canvasLocation" x="202" y="311.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

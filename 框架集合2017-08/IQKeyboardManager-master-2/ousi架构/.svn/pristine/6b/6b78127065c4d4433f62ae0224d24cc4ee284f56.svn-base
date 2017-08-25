@@ -1,0 +1,49 @@
+//
+//  Ousi.pch
+//  Ousi
+//
+//  Created by WuRuizhou on 16/8/25.
+//  Copyright © 2016年 WuRuizhou. All rights reserved.
+//
+
+#ifndef Ousi_pch
+#define Ousi_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "UIView+ViewFrameGeometry.h"
+
+#define WeakSelf __weak typeof(self)this = self;
+
+// 获取物理屏幕的宽度
+#define SceneWidth (([UIScreen mainScreen].bounds.size.width < [UIScreen mainScreen].bounds.size.height) ? [UIScreen mainScreen].bounds.size.width : [UIScreen mainScreen].bounds.size.height)
+// 获取物理屏幕的高度
+#define SceneHeight (([UIScreen mainScreen].bounds.size.width < [UIScreen mainScreen].bounds.size.height) ? [UIScreen mainScreen].bounds.size.height : [UIScreen mainScreen].bounds.size.width)
+
+
+//#define ServiceUrl @"http://ymall.iyouxin.com:8082"         // 测试服务器
+#define ServiceUrl @"http://lsd.iyouxin.com:8082"       // 正式服务器
+
+#define ImageServer @"http://images.iyouxin.com"
+
+#define VerCode 1104
+
+#define GetImage(strUrl) [strUrl hasPrefix:@"http"] ? strUrl : [NSString stringWithFormat:@"%@%@", ImageServer, strUrl]
+
+
+#define DefaultColor [UIColor whiteColor]
+
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+#define ColorFromRGB_255(r, g, b, a) [UIColor colorWithRed:(float)r/255.0 green:(float)g/255.0 blue:(float)b/255.0 alpha:a]
+#define ColorFromRGB_1(r, g, b, a) [UIColor colorWithRed:(float)r green:(float)g blue:(float)b alpha:a]
+
+#ifdef DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#define debugMethod() NSLog(@"%s", __func__)
+#else
+#define NSLog(...)
+#define debugMethod()
+#endif
+
+#endif /* Ousi_pch */

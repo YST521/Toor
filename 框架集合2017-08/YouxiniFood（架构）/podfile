@@ -1,0 +1,8 @@
+platform :ios, '8.0'
+
+
+target "YouxiniFood" do
+
+pod "AFNetworking", "~> 3.0.4"
+pod 'ZYQAssetPickerController',  '~> 1.0.0'
+end
